@@ -16,3 +16,5 @@ You can double check on the command line with :
 if you check again the content of the system alarms list using adb, you'll see that "AlarmReceiver" was removed and so will not be triggered.
 
 So each time you are testing the alarms of your app using AS to launch and stop it, this strange behavior will make you believe that your app had a bug and that is the reason why the alarms did not go off.
+
+Of course, people not testing their code will not be affected by this bug :)
