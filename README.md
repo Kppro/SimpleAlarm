@@ -13,6 +13,6 @@ You can double check on the command line with :
 `vim dump.txt` and search for the occurence of "AlarmReceiver"
 
 3) Now, if the alarm is not triggered yet, and you hit the stop button of AS,
-if you check dump again the content of the system alarms list using adb, you'll see that "AlarmReceiver" was removed and so will not be triggered.
+if you check again the content of the system alarms list using adb, you'll see that "AlarmReceiver" was removed and so will not be triggered.
 
 So each time you are testing the alarms of your app using AS to launch and stop it, this strange behavior will make you believe that your app had a bug and that is the reason why the alarms did not go off.
