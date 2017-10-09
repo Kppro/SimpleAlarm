@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SimpleAlarm</string>
+    <string name="action_settings">Settings</string>
+    <string name="alarm_setted">Setted</string>
+    <string name="alarm_not_setted">Not Setted</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>
