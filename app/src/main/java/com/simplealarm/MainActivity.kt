@@ -40,11 +40,9 @@ class MainActivity : AppCompatActivity() {
     private fun updateAlarmStatus() {
         if (isAlarmSetted(this, Intent(this, AlarmReceiver::class.java), BROADCAST_REQUEST_CODE)) {
             alarmStatus.text = getString(R.string.alarm_setted)
-            Snackbar.make(window.decorView.rootView, R.string.alarm_setted, Snackbar.LENGTH_LONG)
             Log.d("MainActivity", "========> alarm_setted")
         } else {
             alarmStatus.text = getString(R.string.alarm_not_setted)
-            Snackbar.make(window.decorView.rootView, R.string.alarm_not_setted, Snackbar.LENGTH_LONG)
             Log.d("MainActivity", "========> alarm_not_setted")
         }
     }
@@ -53,8 +51,8 @@ class MainActivity : AppCompatActivity() {
         val pendingIntent = PendingIntent.getBroadcast(c, BROADCAST_REQUEST_CODE,
                 Intent(this, AlarmReceiver::class.java), PendingIntent.FLAG_UPDATE_CURRENT)
 
-        // create alarm to be triggered in 2 minutes
-        setAlarm(c, System.currentTimeMillis() + (2 * 60 * 1000), pendingIntent)
+        // create alarm to be triggered in 5 minutes
+        setAlarm(c, System.currentTimeMillis() + (5 * 60 * 1000), pendingIntent)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
